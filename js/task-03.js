@@ -42,4 +42,4 @@ const makeGallery = images
   .join('');
 console.log(makeGallery);
 
-galleryEl.insertAdjacentElement("afterbegin", makeGallery);
+galleryEl.insertAdjacentHTML("afterbegin", makeGallery);
