@@ -28,5 +28,13 @@ button {
   justify-content: space-between;
 }
 .gallery > li > img {
-  width: 350px;
+  width: 400px;
+  
+}
+.valid {
+  border-color: green;
+}
+
+.invalid {
+  border-color: red;
 }
