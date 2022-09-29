@@ -13,10 +13,9 @@ const textEl = document.querySelector('#text');
 const textCont = textEl.textContent;
 //console.log(textCont);
     
-
 inputEl.addEventListener('input', onInputChange);
 function onInputChange() {
     const fontSizeRange = Number(inputEl.value);
-    console.log(fontSizeRange);
+//    console.log(fontSizeRange);
     textEl.style.fontSize = `${fontSizeRange}px`;
 }
