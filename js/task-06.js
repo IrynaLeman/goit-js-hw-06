@@ -22,10 +22,13 @@ const lengthValue = Number(inputEl.dataset.length);
 
 inputEl.addEventListener('blur', onInputBlur);
 function onInputBlur(event) {
-    if (event.currentTarget.value.length === lengthValue) {
+    if (event.currentTarget.value.length == lengthValue) {
         inputEl.classList.add('valid');
+        inputEl.classList.remove('invalid');
     }
     else {
+        inputEl.classList.remove('valid');
         inputEl.classList.add('invalid');
+
     }
 }
